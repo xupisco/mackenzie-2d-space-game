@@ -1,4 +1,5 @@
 $black: #282828;
+$white: #f1f1f1;
 
 html, body, canvas {
     margin: 0 !important;
@@ -7,5 +8,21 @@ html, body, canvas {
 }
 
 body {
-    background-color: $black
+    background-color: $black;
+}
+
+#game_container {
+    width: 320px;
+    height: 480px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+canvas {
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 5px;
 }

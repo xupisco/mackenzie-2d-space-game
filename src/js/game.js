@@ -4,21 +4,20 @@ import { SampleScene } from './scenes/sample_scene';
 var config = {
     title: 'Hello World Phaser JS',
     type: Phaser.AUTO,
+    backgroundColor: '#1e242e',
 
     scale: {
-        width: window.innerWidth,
-        height: window.innerHeight,
+        width: 320,
+        height: 480,
     },
 
     physics: {
         default: 'arcade',
         arcade: {
-            gravity: { y: 200 },
-            debug: true,
+            gravity: { y: 0 },
         }
     },
 
-    transparent: true,
     parent: 'game_container',
     scene: SampleScene
 };
